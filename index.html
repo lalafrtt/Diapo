@@ -2,27 +2,84 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Mon Diaporama Reveal.js</title>
+  <title>Ingénieur en Télécommunications</title>
   <link rel="stylesheet" href="https://unpkg.com/reveal.js/dist/reveal.css">
-  <link rel="stylesheet" href="https://unpkg.com/reveal.js/dist/theme/black.css" id="theme">
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js/dist/theme/moon.css" id="theme">
 </head>
 <body>
   <div class="reveal">
     <div class="slides">
-      <section>Bienvenue à ma présentation interactive 🚀</section>
+      <section data-transition="zoom">
+        <h1>Ingénieur en Télécommunications</h1>
+        <h3 class="fragment fade-up">Un métier d'avenir 📡</h3>
+      </section>
+
       <section>
-        <h2>Avantages</h2>
+        <h2>Missions Principales</h2>
         <ul>
-          <li>Super fluide</li>
-          <li>Commandes clavier</li>
-          <li>Exportable et partageable</li>
+          <li class="fragment fade-right">Conception de réseaux</li>
+          <li class="fragment fade-right">Déploiement 5G/6G</li>
+          <li class="fragment fade-right">Sécurité des communications</li>
+          <li class="fragment fade-right">Innovation technologique</li>
+        </ul>
+      </section>
+
+      <section data-transition="slide">
+        <section>
+          <h2>Compétences Requises</h2>
+          <div class="fragment fade-up">
+            <h3>Techniques</h3>
+            <ul>
+              <li>Réseaux IP</li>
+              <li>Systèmes embarqués</li>
+              <li>Programmation</li>
+            </ul>
+          </div>
+        </section>
+        <section>
+          <h3>Soft Skills</h3>
+          <ul class="fragment fade-in">
+            <li>Gestion de projet</li>
+            <li>Travail d'équipe</li>
+            <li>Veille technologique</li>
+          </ul>
+        </section>
+      </section>
+
+      <section data-transition="convex">
+        <h2>Secteurs d'Activité</h2>
+        <div class="fragment fade-left" style="display: flex; justify-content: space-around;">
+          <div>
+            <h4>🏢 Entreprises</h4>
+            <ul>
+              <li>Opérateurs télécoms</li>
+              <li>Constructeurs</li>
+              <li>ESN</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section data-transition="fade">
+        <h2>Perspectives d'Évolution</h2>
+        <ul class="fragment fade-up">
+          <li>Chef de projet</li>
+          <li>Architecte réseau</li>
+          <li>Expert technique</li>
+          <li>Consultant</li>
         </ul>
       </section>
     </div>
   </div>
   <script src="https://unpkg.com/reveal.js/dist/reveal.js"></script>
   <script>
-    Reveal.initialize();
+    Reveal.initialize({
+      transition: 'slide',
+      autoAnimateEasing: 'ease-out',
+      autoAnimateDuration: 0.8,
+      backgroundTransition: 'fade'
+    });
   </script>
 </body>
 </html>
+
